@@ -19,10 +19,39 @@ class App extends Component {
           >
             Learn React
           </a>
-          <p>fire</p>
+          <p>fireOK</p>
+          <Button />
         </header>
       </div>
     );
+  }
+}
+
+class Button extends Component {
+  constructor(){
+    super();
+    this.state = {
+      count: 0,
+    }
+    this._addCount = this._addCount.bind(this);
+  }
+
+  _addCount(){
+    this.setState({
+      count: this.state.count + 1
+    })
+  };
+
+  render(){
+    return(
+      <div>
+        <button onClick={this._addCount}>
+          button
+        </button>
+        <p>{this.state.count}</p>
+        <p>あいうえお</p>
+      </div>  
+    )
   }
 }
 
