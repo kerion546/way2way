@@ -49,7 +49,7 @@ class Button extends Component {
           button
         </button>
         <p>{this.state.count}</p>
-        <p>あいうえお</p>
+        <p>あいうえおかきくけこ</p>
       </div>  
     )
   }
